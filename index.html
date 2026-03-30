@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shine & Tidy Cleaning Services Ltd</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #1e3a5f;
+      --accent: #facc15;
+      --light: #f8fafc;
+      --dark: #0f172a;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: var(--dark);
+    }
+
+    header {
+      background: linear-gradient(135deg, #1e3a5f, #162c45);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header img {
+      width: 110px;
+      padding: 8px;
+      margin-bottom: 15px;
+    }
+
+    .cta {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 12px 22px;
+      background: var(--accent);
+      color: black;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .services, .why {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: var(--primary);
+      color: white;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 14px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img src="logo.png" />
+  <h1>Shine & Tidy Cleaning Services Ltd</h1>
+  <p>Professional cleaning across Brighton, Hove & Worthing</p>
+  <a href="#contact" class="cta">Get a Free Quote</a>
+</header>
+
+<section>
+  <p>
+    Shine & Tidy Cleaning Services Ltd provides dependable cleaning services across Brighton, Hove and Worthing.
+  </p>
+</section>
+
+<section>
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">Commercial Cleaning</div>
+    <div class="card">Office Cleaning</div>
+    <div class="card">End of Tenancy Cleaning</div>
+    <div class="card">Deep Cleaning</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form id="contactForm">
+    <input type="text" placeholder="Name" required />
+    <input type="email" placeholder="Email" required />
+    <textarea placeholder="Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  <p>info@shineandtidy.co.uk</p>
+</footer>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  alert('Message sent!');
+});
+</script>
+
+</body>
+</html>
