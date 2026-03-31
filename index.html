@@ -28,11 +28,17 @@
       padding: 60px 20px;
     }
 
-    header img {
-      width: 15px;
+    header img#logo {
+      width: 200px;
+      border-radius: 15%;
+      margin-bottom: 15px;
       box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     }
 
+	header img {
+      width: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
     .cta {
       margin-top: 20px;
       display: inline-block;
@@ -129,7 +135,7 @@
 <body>
 
 <header>
-  <img src="logo.png" />
+  <img id="logo" src="logo.png" />
   <h1>Shine & Tidy Cleaning Services Ltd</h1>
   <p>Professional cleaning across Brighton, Hove & Worthing</p>
   <a href="#contact" class="cta">Get a Free Quote</a>
